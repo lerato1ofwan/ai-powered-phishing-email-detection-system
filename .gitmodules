@@ -1,3 +1,0 @@
-[submodule "App/ai-powered-phishing-email-detection-api"]
-	path = App/ai-powered-phishing-email-detection-api
-	url = https://huggingface.co/spaces/lleratodev/multinomial-nb-phishing-email-detection-api

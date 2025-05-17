@@ -2,11 +2,28 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import os
 import subprocess
-from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Tuple, Optional 
 from .ml import get_model_prediction, check_model_status
 
 app = FastAPI(title="AI-Powered Phishing Email Detection System")
+
+# Define allowed origins for CORS
+origins = [
+    "https://ai-powered-phishing-email-detection-system.vercel.app",
+    "http://localhost:3000",
+    "https://huggingface.co/spaces/lleratodev/multinomial-nb-phishing-email-detection-api",
+    "https://*.hf.space",
+    "https://huggingface.co/spaces/lleratodev/multinomial-nb-phishing-email-detection-api.hf.space",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,  # Allows specific origins
+    allow_credentials=True, # Allows cookies to be included in requests
+    allow_methods=["*"],  # Allows all methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allows all headers
+)
 
 # Input data model
 class EmailInput(BaseModel):

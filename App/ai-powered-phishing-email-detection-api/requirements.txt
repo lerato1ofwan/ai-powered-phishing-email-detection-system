@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+scikit-learn==1.5.1
+numpy==1.26.4
+pandas
+joblib
+scipy
+lime
+python-multipart
+dill 
+
+transformers
+transformers-interpret
+torch

@@ -1,0 +1,14 @@
+secure.alert@paypal-support-services.net
+
+URGENT: Unusual Login Attempt Detected on Your Account!
+
+Dear Customer,
+
+Our system has detected an unusual login attempt on your account from an unrecognized device in a different country. For your security, we have temporarily suspended your account.
+
+To reactivate your account and verify this activity, please log in immediately via the secure portal below: FakeLink-PaypalSecureLoginPortal.com/resolve-alert-id7720
+
+If you do not verify your account within 24 hours, it may be permanently disabled to prevent further unauthorized access.
+
+Thank you, 
+PayPal Security Team

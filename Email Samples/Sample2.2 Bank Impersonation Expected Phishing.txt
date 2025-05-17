@@ -1,0 +1,15 @@
+FNB Online Services <noreply@fnb-clientportal.com>
+
+Important Security Update Required for Your FNB Online Banking
+
+Dear FNB Client,
+
+We are upgrading our online security systems to better protect your banking experience. As part of this mandatory update, all users are required to re-verify their account details.
+
+Please click on the link below to proceed to our secure verification page:
+[FakeLink-FNB-OnlineUpdate.com/verification-step1]
+
+This is a required action to ensure continued access to your online banking services.
+
+Regards,
+FNB Online Banking Team

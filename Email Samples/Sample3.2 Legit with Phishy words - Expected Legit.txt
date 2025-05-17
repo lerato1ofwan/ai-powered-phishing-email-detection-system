@@ -1,0 +1,17 @@
+accounts@trustedsupplier.co.za
+
+Action Required: Overdue Invoice INV-00123 for Payment
+
+Dear Valued Client,
+
+This is a friendly reminder that invoice INV-00123 for R2500.00, related to your recent order of office supplies, is now overdue.
+Your prompt payment would be greatly appreciated to ensure continued service.
+
+Please find the invoice attached for your records and make the payment at your earliest convenience.
+You can also view and pay your invoice online here: https://www.payspace.com/
+
+If you have already made the payment, please disregard this notice. For any queries, contact our accounts department.
+
+Kind regards,
+Accounts Department,
+Trusted Supplier Inc.

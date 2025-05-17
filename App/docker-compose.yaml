@@ -1,0 +1,28 @@
+services:
+  frontend:
+    build: 
+      context: ./ai-powered-phishing-email-detection-frontend
+      dockerfile: Dockerfile
+      args:
+          NEXT_PUBLIC_API_ENDPOINT: http://api:7860/predict
+    environment:
+      - NEXT_PUBLIC_API_ENDPOINT=http://api:7860/predict
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    networks:
+      - app-network
+
+  api:
+    build:
+      context: ./ai-powered-phishing-email-detection-api
+      dockerfile: Dockerfile
+    ports:
+      - "7860:7860"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

@@ -14,38 +14,7 @@ This `README.md` provides instructions on how to set up and run the project loca
 
 The project codebase is organized as follows:
 
-main-folder/
-├── docker-compose.yml
-├── README.md
-├── ai-powered-phishing-email-detection-frontend/  # Next.js frontend application
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── app/
-│   └── ... (other frontend files)
-├── ai-powered-phishing-email-detection-api/     # FastAPI backend application
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   ├── app/
-│   │   ├── main.py
-│   │   ├── ml_logic.py
-│   │   ├── assets/                                # MultinomialNB model joblibs
-│   │   │   └── multinomial_nb_email_preprocessor.joblib
-│   │   │   └── trained_multinomial_nb_model.joblib
-│   │   └── ml/                                    # ML model implementation logic
-│   │       └── bert_mini_model.py
-│   │       └── nb_model.py
-│   │       └── common.py
-│   └── ... (other backend files)
-├── Models/                                        # Model training notebooks and artifacts
-│   ├── COS720_w_BERT_Trained_Refined.ipynb
-│   ├── MultinomialNB_Final_Submission_u25468023_COS_720_Project.ipynb
-│   ├── 720-bert-mini-phishing-fine-tune/          # Fine-tuned BERT-mini artifacts
-│   │   ├── model.safetensors
-│   │   └── ... (other BERT artifacts)
-│   └── Trained MultinomialNM Model/               # MultinomialNB joblibs (duplicate)
-│       └── ...
-└── Email Samples/                                 
-└── ... (email sample .txt files)
+![Uploading image.png…]()
 
 ## 3. Technologies Used
 

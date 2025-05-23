@@ -14,7 +14,8 @@ This `README.md` provides instructions on how to set up and run the project loca
 
 The project codebase is organized as follows:
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/bc89cedd-78e4-4950-81fb-c086fd8058f3)
+
 
 ## 3. Technologies Used
 

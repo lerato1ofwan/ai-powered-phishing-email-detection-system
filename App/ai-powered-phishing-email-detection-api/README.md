@@ -1,5 +1,5 @@
 ---
-title: Multinomial Nb Phishing Email Detection Api
+title: AI Powered Phishing Email Detection Api
 emoji: 💻
 colorFrom: yellow
 colorTo: purple

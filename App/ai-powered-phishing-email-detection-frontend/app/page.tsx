@@ -68,18 +68,33 @@ export default function Home() {
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
-      setSelectedFile(file);
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        const text = e.target?.result as string;
-        setBody(text); // Populate body textarea with file content
-      };
-      reader.onerror = () => {
-        console.error("Error reading file");
-        setApiError("Could not read the selected file.");
+      const allowedTypes = ['text/plain', 'text/csv'];
+      const fileExtension = file.name.split('.').pop()?.toLowerCase();
+
+      if (allowedTypes.includes(file.type) || (fileExtension === 'txt' || fileExtension === 'csv')) {
+        setSelectedFile(file);
+        setApiError(null); // Clear any previous file errors
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const text = e.target?.result as string;
+          setBody(text); // Populate body textarea with file content
+        };
+        reader.onerror = () => {
+          console.error("Error reading file");
+          setApiError("Could not read the selected file.");
+          setIsModalOpen(true);
+          setSelectedFile(null);
+        }
+        reader.readAsText(file);
+      } else {
+        setApiError(`Invalid file type. Please upload a .txt or .csv file. You uploaded a .${fileExtension} file.`);
+        setIsModalOpen(true);
         setSelectedFile(null);
+        // Reset the file input
+        if (event.target) {
+          event.target.value = '';
+        }
       }
-      reader.readAsText(file);
     } else {
       setSelectedFile(null);
     }

@@ -96,6 +96,19 @@ No other local Python or Node.js environment setup is strictly necessary if runn
     You may need to run `docker-compose up` (with a hyphen) if you are using an older version of Docker Compose.
     Wait for the services to build and start. You will see logs from both the frontend and backend containers.
 
+    OR run projects directly locally
+
+    Inside API folder, run
+    ```bash
+    unicorn --reload myapp:app
+    ```
+
+    Inside API folder, run
+    ```bash
+    npm install
+    npm run dev
+    ```
+
 4.  **Access the Application:**
     Once the containers are running, open your web browser and navigate to:
     [http://localhost:3000](http://localhost:3000)
